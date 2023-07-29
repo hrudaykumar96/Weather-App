@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(10, 11, 11, 0.52), rgba(10, 9, 10, 0.73)), url(../images/sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  overflow: hidden;
+}
+
+.box {
+  box-shadow: 1em 1em 1rem #908282;
+  width: 90%;
+  text-align: center;
+  max-width: 47rem;
+  margin: 10rem auto 0;
+  padding: 4rem 3.4rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 2rem;
+  background-color: transparent;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input {
+  font-size: 1.8rem;
+  border-radius: 3rem;
+  padding: 1rem 2.5rem;
+  outline: 0;
+  border: 0;
+  flex: 1;
+  height: 5rem;
+}
+
+.search button {
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  height: 6rem;
+  width: 6rem;
+  margin-left: 4rem;
+  text-align: center;
+}
+
+.search button img {
+  width: 1.6rem;
+}
+
+.error {
+  color: #f5190a;
+  font-size: 1.7rem;
+  text-align: left;
+  margin: 1rem 2rem auto;
+  display: none;
+}
+
+.weather {
+  display: none;
+}
+
+.weather img {
+  width: 15rem;
+}
+
+.weather p {
+  font-size: 3rem;
+}
+
+.weather h3 {
+  font-size: 3rem;
+  padding: 1.2rem;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col img {
+  width: 6.5rem;
+  margin-right: 1.2rem;
+}
+
+.col p {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.fog {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  flex-direction: row;
+}
+
+.fog img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 300vw;
+  animation: fog 60s linear forwards infinite;
+  z-index: -1;
+}
+
+.fog span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@keyframes fog {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-200vw, 0, 0);
+  }
+}
+.condition{
+  font-size: 5rem;
+}
+.report {
+  display: none;
+}
