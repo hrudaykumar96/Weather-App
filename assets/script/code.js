@@ -11,7 +11,6 @@ async function checkweather(city) {
     document.querySelector(".report").style.display = "none";
   } else {
     const data = await response.json();
-    console.log(data);
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML =
       Math.round(data.main.temp) + "°C";
